@@ -12,9 +12,10 @@ public class PostService : IPostService
     public PostService()
     {
         FilePath = "D:\\Work\\Groups\\G_13\\Moduls\\G13_3_4_Modul\\3_2_dars\\src\\SocialMedia.Api\\AppDBContext\\Data.json";
-        Posts = new List<Post>();
         
+        Posts = new List<Post>();
     }
+
     public Guid CreatePost(PostCreateDto postCreateDto)
     {
         ReadPostsFromFile();
