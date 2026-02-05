@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5D8C4939-9FE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.Api", "src\SocialMedia.Api\SocialMedia.Api.csproj", "{4FCD2665-8E38-49CA-9F04-E84C116104AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithJson", "src\WorkingWithJson\WorkingWithJson.csproj", "{18EBB7C7-F019-45C1-8E2F-D1848E8E9079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 		{4FCD2665-8E38-49CA-9F04-E84C116104AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCD2665-8E38-49CA-9F04-E84C116104AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FCD2665-8E38-49CA-9F04-E84C116104AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18EBB7C7-F019-45C1-8E2F-D1848E8E9079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18EBB7C7-F019-45C1-8E2F-D1848E8E9079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18EBB7C7-F019-45C1-8E2F-D1848E8E9079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18EBB7C7-F019-45C1-8E2F-D1848E8E9079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4FCD2665-8E38-49CA-9F04-E84C116104AA} = {5D8C4939-9FE9-49AF-9315-668B56CF3F2E}
+		{18EBB7C7-F019-45C1-8E2F-D1848E8E9079} = {5D8C4939-9FE9-49AF-9315-668B56CF3F2E}
 	EndGlobalSection
 EndGlobal

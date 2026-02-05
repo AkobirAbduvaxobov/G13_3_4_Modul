@@ -6,7 +6,7 @@ public interface IPostService
 {
     List<PostGetDto> GetAllPosts();
     PostGetDto? GetPostById(Guid postId);
-    PostGetDto CreatePost(PostCreateDto postCreateDto);
+    Guid CreatePost(PostCreateDto postCreateDto);
     bool UpdatePost(Guid postId, PostUpdateDto postUpdateDto);
     bool DeletePost(Guid postId);
 }

@@ -1,0 +1,33 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
+
+namespace WorkingWithJson;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // JSON
+
+        PostGetDto postGetDto = new PostGetDto()
+        {
+            PostId = Guid.NewGuid(),
+            Title = "Sample Title 1",
+            Content = "Sample Content 1",
+            CreatedAt = DateTime.UtcNow,
+            UpdatedAt = DateTime.UtcNow,
+            UserId = Guid.NewGuid()
+        };
+
+        var json = JsonSerializer.Serialize(postGetDto);
+
+        Console.WriteLine(json);
+
+        PostGetDto? res = JsonSerializer.Deserialize<PostGetDto>(json);
+
+        var a = 5;
+
+
+
+    }
+}

@@ -17,8 +17,8 @@ public class PostsController : ControllerBase
     [HttpPost("create")]
     public Guid Create(PostCreateDto postCreateDto)
     {
-        var createdPost = PostService.CreatePost(postCreateDto);
-        return createdPost.PostId;
+        var postId = PostService.CreatePost(postCreateDto);
+        return postId;
     }
 
     [HttpGet("get-all")]

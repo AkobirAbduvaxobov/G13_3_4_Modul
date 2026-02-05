@@ -1,4 +1,4 @@
-﻿namespace SocialMedia.Api.Dtos;
+﻿namespace WorkingWithJson;
 
 public class PostGetDto
 {
