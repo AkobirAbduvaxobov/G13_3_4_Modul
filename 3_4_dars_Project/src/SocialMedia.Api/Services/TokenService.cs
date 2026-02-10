@@ -9,11 +9,11 @@ public class TokenService : ITokenService
     {
         UserRepository = new UserRepository();
     }
-    public (string userId, string role) GetTokenInfo(string token)
+    public (Guid userId, string role) GetTokenInfo(string token)
     {
         var userId = token.Substring(0, 36);
         var role = token.Substring(36);
 
-        return (userId, role);
+        return (Guid.Parse(userId), role);
     }
 }

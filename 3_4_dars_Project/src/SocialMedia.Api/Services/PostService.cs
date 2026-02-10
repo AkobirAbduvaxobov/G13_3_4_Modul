@@ -22,7 +22,7 @@ public class PostService : IPostService
         var tokenResult = TokenService.GetTokenInfo(token);
         
 
-        var userBlocked = UserRepository.UserBlocked(Guid.Parse(tokenResult.userId));
+        var userBlocked = UserRepository.UserBlocked(tokenResult.userId);
 
         if (userBlocked == true)
         {
@@ -36,14 +36,14 @@ public class PostService : IPostService
             Content = postCreateDto.Content,
             CreatedTime = DateTime.Now,
             UpdatedTime = DateTime.Now,
-            UserId = Guid.Parse(tokenResult.userId)
+            UserId = tokenResult.userId
         };
 
         var userExists = false;
         var users = UserRepository.GetAllUsers();
         foreach (var user in users)
         {
-            if (user.UserId.ToString() == tokenResult.userId)
+            if (user.UserId == tokenResult.userId)
             {
                 userExists = true;
                 break;
@@ -64,7 +64,7 @@ public class PostService : IPostService
     {
         var tokenResult = TokenService.GetTokenInfo(token);
 
-        var userBlocked = UserRepository.UserBlocked(Guid.Parse(tokenResult.userId));
+        var userBlocked = UserRepository.UserBlocked(tokenResult.userId);
 
         if (userBlocked == true)
         {
@@ -75,7 +75,7 @@ public class PostService : IPostService
 
         foreach (var post in posts)
         {
-            if (post.PostId == postId && post.UserId.ToString() == tokenResult.userId)
+            if (post.PostId == postId && post.UserId == tokenResult.userId)
             {
                 posts.Remove(post);
                 PostRepository.SaveAllPosts(posts);
@@ -110,7 +110,7 @@ public class PostService : IPostService
 
         foreach (var post in posts)
         {
-            if (post.UserId.ToString() == tokenResult.userId)
+            if (post.UserId == tokenResult.userId)
             {
                 var postGetDto = new PostGetDto()
                 {
@@ -169,7 +169,7 @@ public class PostService : IPostService
     {
         var tokenResult = TokenService.GetTokenInfo(token);
 
-        var userBlocked = UserRepository.UserBlocked(Guid.Parse(tokenResult.userId));
+        var userBlocked = UserRepository.UserBlocked(tokenResult.userId);
 
         if (userBlocked == true)
         {
@@ -180,7 +180,7 @@ public class PostService : IPostService
 
         foreach (var post in posts)
         {
-            if (post.PostId == postId && post.UserId.ToString() == tokenResult.userId)
+            if (post.PostId == postId && post.UserId == tokenResult.userId)
             {
                 post.Title = postCreateDto.Title;
                 post.Content = postCreateDto.Content;

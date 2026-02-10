@@ -57,4 +57,10 @@ public class UserRepository : IUserRepository
 
         return null;
     }
+
+    public bool UserExists(Guid userId)
+    {
+        var users = GetAllUsers();   
+        return users.Any(u => u.UserId == userId);
+    }
 }
