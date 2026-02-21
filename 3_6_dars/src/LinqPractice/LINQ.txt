@@ -1,0 +1,94 @@
+using System.Linq;
+
+namespace LinqPractice;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+
+
+
+
+
+
+
+
+
+
+        //var students = Student.GetStudents();
+        //var count1 = students.Count();
+
+
+
+        // Single & SingleOrDefault
+        //var student = students.Single(s => s.Age >= 25);
+        //var studentOrDefault = students.SingleOrDefault(s => s.Age >= 25);
+
+        //var a = 5;
+
+
+
+        // First &
+        //var first = students.First(s => s.Age >= 25);
+        //var firstOrDefault = students.FirstOrDefault(s => s.Age > 25);
+
+
+
+        // All & Any
+        //var all = students.All(s => s.Age > 15);
+        //var any = students.Any(s => s.Scholarship >= 1000000);
+
+        //Console.WriteLine(all);
+        //Console.WriteLine(any);
+
+
+        // Min & Max
+        //var minn = students.Min(s => s.Age);
+        //var maxx = students.Max(s => s.Age);
+
+        //Console.WriteLine(minn);
+        //Console.WriteLine(maxx);
+
+
+        // Sum & Average
+        //var all = students.Sum(s => s.Age);
+        //var average = students.Average(s => s.Age);
+        //Console.WriteLine(all);
+        //Console.WriteLine(average);
+
+
+        // Count
+        //var count2 = students.Count(s => s.Age > 20);
+        //Console.WriteLine(count2);
+
+
+
+        // OrderBy & OrderByDescending
+        //var orderedStudents = students.OrderBy(s => s.Age).ToList();
+        //var orderedStudents1 = students.OrderByDescending(s => s.Age).ToList();
+        //var count2 = orderedStudents.Count();
+
+
+
+        // select
+
+        //var foos = students.Select(s => new Foo() { FirstName = s.FirstName, StudentId = s.StudentId}).ToList();
+        //var count2 = foos.Count();
+
+
+
+        // where
+
+        //var resStudents = students.Where(s => s.Scholarship > 700000).ToList();
+        //var count2 = resStudents.Count();
+
+
+
+
+
+    }
+
+
+
+}
