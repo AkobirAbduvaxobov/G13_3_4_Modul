@@ -4,7 +4,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-
+        List
         //Predicate<string> predicate;
         //predicate = Check;
 
