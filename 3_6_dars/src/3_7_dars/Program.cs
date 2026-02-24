@@ -7,6 +7,27 @@ internal class Program
 {
     static void Main(string[] args)
     {
+
+        var f1 = (int a, int b, int c) => Math.Max(a, Math.Max(b, c));
+
+        var act1 = (string s1, string s2) => Console.WriteLine(s1.Length + s2.Length);
+
+        var f2 = (List<Book> books) =>
+        {
+            var expensiveBook = books.MaxBy(b => b.Price);
+            return expensiveBook;
+        };
+
+        var act2 = (Book book) =>
+        {
+            Console.WriteLine(book);
+            book.Price *= 10;
+            Console.WriteLine($"Name  : {book.Name}");
+            Console.WriteLine($"Price : {book.Price}");
+        };
+
+
+
         // => 
 
         //Action<int, int> act1 = (int a, int b) => Console.WriteLine($"+ : {a + b}");
@@ -53,5 +74,15 @@ internal class Program
             Console.WriteLine(s);
         }
 
+    }
+}
+
+public class Book
+{
+    public decimal Price { get; set; }
+    public string Name { get; set; }
+    public override string ToString()
+    {
+        return $"";
     }
 }
