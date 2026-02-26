@@ -1,0 +1,46 @@
+namespace _3_8_Generics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        // 6. Employee (Name, Salary) -> Oyligini 15% oshirib yangi qiymatni qaytarsin
+        // Func<Employee, decimal>
+
+
+
+        //var f1 = (Employee employee) =>
+        //{
+        //    employee.Salary = employee.Salary + employee.Salary * 15m / 100m;
+        //    return employee.Salary;
+        //};
+
+        //var empployee = new Employee()
+        //{
+        //    Name = "Ali",
+        //    Salary = 500m
+        //};
+
+        //Console.WriteLine(f1.Invoke(empployee));
+
+        // 7. string olsin -> Ichidagi unli harflar sonini qaytarsin
+        // Func<string, int>
+
+        //var f2 = (string s) =>
+        //{
+        //    var vowels = "AaUuIiEeOo";
+        //    var countRes = s.Count(ch => vowels.Contains(ch));
+        //    return countRes;
+        //};
+
+        //var s = "qwsAdaefUighsn90x5s2O";
+        //Console.WriteLine(f2.Invoke(s));
+
+    }
+}
+
+//public class Employee
+//{
+//    public string Name { get; set; }
+//    public decimal Salary { get; set; }
+//}
