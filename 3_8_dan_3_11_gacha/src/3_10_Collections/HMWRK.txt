@@ -1,0 +1,38 @@
+namespace _3_10_Collections;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        LinkedList<string> strings = new LinkedList<string>();
+
+        strings.AddLast("salom");
+        strings.AddLast("privet");
+        strings.AddLast("hello");
+        strings.AddLast("konicheva");
+
+        var node = strings.Find("salom");
+
+        while(node.Next != null)
+        {
+            Console.WriteLine(node.Value);
+            node = node.Next;
+        }
+        Console.WriteLine();
+        node = strings.Find("salom");
+        while (true)
+        {
+            Console.WriteLine(node.Value);
+            if (node.Next == null)
+            {
+                break;
+            }
+            node = node.Next;
+        }
+
+        //foreach (var item in strings)
+        //{
+        //    Console.WriteLine(item);
+        //}
+    }
+}
