@@ -11,10 +11,23 @@ public class Program
         //dog.Age = 3;
 
         Node node = NodeService.CreateNode(4);
-        var res = GetLengthOfNode(node);
-        Console.WriteLine(res);
+        var res = GetLastNode(node);
+        Console.WriteLine(res.Value);
 
 
+    }
+
+
+
+
+    static Node GetLastNode(Node node)
+    {
+        while(node.Next != null)
+        {
+            node = node.Next;
+        }
+
+        return node;
     }
 
     static int GetLengthOfNode(Node node)
