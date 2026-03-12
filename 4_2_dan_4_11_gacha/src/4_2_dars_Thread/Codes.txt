@@ -1,0 +1,102 @@
+
+
+using System.Diagnostics.Metrics;
+
+namespace _4_2_dars_Thread;
+
+internal class Program
+{
+
+    static object obj = new object();
+    public static int counter = 0;
+    static void Increment()
+    {
+        for (int i = 0; i < 100000; i++)
+        {
+            lock (obj)
+            {
+                counter++;
+            }
+        }
+    }
+
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Main boshlandi");
+        Thread t1 = new Thread(Increment);
+        Thread t2 = new Thread(Increment);
+
+        t1.Start();
+        t2.Start();
+
+        t1.Join();
+        t2.Join();
+        Console.WriteLine("Main tugadi");
+        Console.WriteLine(counter);
+
+    }
+
+    public static void Do1(object a)
+    {
+        Console.WriteLine("Do1 boshlandi");
+        for (int i = 1; i < 30; i++)
+        {
+            Console.WriteLine("Do1: " + i);
+            Thread.Sleep(200);
+        }
+        Console.WriteLine("Do1 tugadi");
+    }
+
+    public static void Do2(object a)
+    {
+        Console.WriteLine("Do2 boshlandi");
+        for (int i = 1; i < 30; i++)
+        {
+            Console.WriteLine("Do2: " + i);
+            Thread.Sleep(200);
+        }
+        Console.WriteLine("Do2 tugadi");
+    }
+}
+
+
+
+
+--------------------------------------------------------------------------
+
+
+namespace _4_2_dars_Thread;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        //Thread thread = new Thread(Do);
+
+        Console.WriteLine("Main boshlandi");
+        Console.WriteLine($"ThreadId : {Thread.CurrentThread.ManagedThreadId}");
+        
+        
+        
+        Thread thread = new Thread(Do);
+        thread.Start();
+
+        //Thread.Sleep(1000);
+
+        Console.WriteLine($"ThreadId : {Thread.CurrentThread.ManagedThreadId}");
+        Console.WriteLine("Main Tugadi");
+    }
+
+    public static void Do()
+    {
+        Console.WriteLine("Do boshlandi");
+        for (int i = 1; i <= 10; i++)
+        {
+            Console.WriteLine($"ThreadId : {Thread.CurrentThread.ManagedThreadId}");
+            Console.WriteLine(i);
+        }
+        Console.WriteLine("Do tugadi");
+    }
+}
+    
