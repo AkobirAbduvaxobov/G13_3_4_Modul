@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_2_dars_Thread", "src\4_2_dars_Thread\4_2_dars_Thread.csproj", "{C9051A87-A23E-4BE3-ABA1-FEE6376E6206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_3_Async.Api", "src\4_3_Async.Api\4_3_Async.Api.csproj", "{38573BCB-9D9E-4B15-8414-8E91CFB365EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{C9051A87-A23E-4BE3-ABA1-FEE6376E6206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9051A87-A23E-4BE3-ABA1-FEE6376E6206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9051A87-A23E-4BE3-ABA1-FEE6376E6206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38573BCB-9D9E-4B15-8414-8E91CFB365EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38573BCB-9D9E-4B15-8414-8E91CFB365EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38573BCB-9D9E-4B15-8414-8E91CFB365EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38573BCB-9D9E-4B15-8414-8E91CFB365EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C9051A87-A23E-4BE3-ABA1-FEE6376E6206} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
+		{38573BCB-9D9E-4B15-8414-8E91CFB365EE} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 	EndGlobalSection
 EndGlobal

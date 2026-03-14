@@ -1,0 +1,8 @@
+1. User Drop database
+2. Users.Add(newUser);
+3. "Insert into Users name = Drop database"
+
+4. select * from users where name = "drop"
+
+
+
