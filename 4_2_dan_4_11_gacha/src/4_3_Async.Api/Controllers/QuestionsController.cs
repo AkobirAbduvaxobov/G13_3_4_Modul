@@ -16,7 +16,7 @@ public class QuestionsController : ControllerBase
         QuestionService = new QuestionService();
     }
 
-    [HttpPost]
+    [HttpPost] // server
     public async Task<Guid> Add(QuestionCreateDto questionCreateDto)
     {
         return await QuestionService.CreateAsync(questionCreateDto);
