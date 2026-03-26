@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_5_DessignPatter", "src\4_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_6_dars_TelegramBot", "src\4_6_dars_TelegramBot\4_6_dars_TelegramBot.csproj", "{394A079A-6390-4523-8B5B-A0D842D1F277}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_7_dars_Bot_davomi", "src\4_7_dars_Bot_davomi\4_7_dars_Bot_davomi.csproj", "{62D514BC-377B-496B-9E24-89D8A06E7939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{394A079A-6390-4523-8B5B-A0D842D1F277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{394A079A-6390-4523-8B5B-A0D842D1F277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{394A079A-6390-4523-8B5B-A0D842D1F277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D514BC-377B-496B-9E24-89D8A06E7939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D514BC-377B-496B-9E24-89D8A06E7939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D514BC-377B-496B-9E24-89D8A06E7939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D514BC-377B-496B-9E24-89D8A06E7939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +50,6 @@ Global
 		{38573BCB-9D9E-4B15-8414-8E91CFB365EE} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 		{B431589B-C80E-44BB-9868-64408ADDDD89} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 		{394A079A-6390-4523-8B5B-A0D842D1F277} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
+		{62D514BC-377B-496B-9E24-89D8A06E7939} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 	EndGlobalSection
 EndGlobal
