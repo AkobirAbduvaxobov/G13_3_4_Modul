@@ -6,6 +6,34 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
+        string path = @"D:\salom.txt";
+
+
+        using (var writer = new StreamWriter(path))
+        {
+            writer.WriteLine("Hello bro");
+            writer.WriteLine("This is .NET 8");
+        }
+
+
+
+        //using (var reader = new StreamReader(path)) 
+        //{
+        //    while(true)
+        //    {
+        //        var line = reader.ReadLine();
+        //        if(line == null)
+        //        {
+        //            break;
+        //        }
+        //        Console.WriteLine(line);
+        //    }
+        //    //string content = reader.ReadToEnd();
+        //    //Console.WriteLine(content);
+        //}
+
+
+
         //var path = @"D:\salom.txt";
         //var chunkSize = 1024 * 1024 * 10;
         //using (var fs = new FileStream(path, FileMode.Open))
@@ -31,10 +59,10 @@ internal class Program
         //}
 
 
-        string sourcePath = @"D:\OnlineCource\2026-03-26 14-49-17.mp4";
-        string destinationPath = @"D:\OnlineCource\Test\dars2.mp4";
+        //string sourcePath = @"D:\OnlineCource\2026-03-26 14-49-17.mp4";
+        //string destinationPath = @"D:\OnlineCource\Test\dars2.mp4";
 
-        await CopyLargeFileAsync(sourcePath, destinationPath);
+        //await CopyLargeFileAsync(sourcePath, destinationPath);
     }
 
     public static async Task CopyLargeFileAsync(string sourcePath, string destinationPath)
