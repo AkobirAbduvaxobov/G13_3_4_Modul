@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_7_dars_Bot_davomi", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_8_Bot_Davomi", "src\4_8_Bot_Davomi\4_8_Bot_Davomi.csproj", "{7D27E70E-59F5-440F-9262-BF11DA2C1B90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_9_dars_Streams", "src\4_9_dars_Streams\4_9_dars_Streams.csproj", "{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{7D27E70E-59F5-440F-9262-BF11DA2C1B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D27E70E-59F5-440F-9262-BF11DA2C1B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D27E70E-59F5-440F-9262-BF11DA2C1B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +64,6 @@ Global
 		{394A079A-6390-4523-8B5B-A0D842D1F277} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 		{62D514BC-377B-496B-9E24-89D8A06E7939} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 		{7D27E70E-59F5-440F-9262-BF11DA2C1B90} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
+		{5DF81792-1F9F-44E1-8AD2-DFF34B8488B9} = {2EB7C692-A6C6-4F9A-888C-A8CEB2B4EBC1}
 	EndGlobalSection
 EndGlobal
