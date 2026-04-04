@@ -1,11 +1,10 @@
-﻿namespace OnlineWebManagement.Broker.Services;
+﻿namespace OnlineWebManagement.Services.Services;
 
-public interface IStorageBroker
+public interface IStorageService
 {
     public void CreateFolder(string folderPath);
     public void DeleteFolder(string folderPath);
-    public Task UploadFilesAsync(Dictionary<string, Stream> fileStreams);
-    public Task UploadFileAsync(string filePath, Stream stream);
+    public Task UploadFileAsync(Dictionary<string, Stream> fileStreams);
     public void DeleteFile(string filePath);
     public Stream DownloadFile(string filePath);
     public Task<Stream> DownloadFolderAsZipAsync(string folderPath);

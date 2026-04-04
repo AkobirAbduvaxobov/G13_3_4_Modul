@@ -2,7 +2,7 @@
 
 namespace OnlineWebManagement.Broker.Services;
 
-public class AzureStorageBroker : IStorageBroker
+public class AzureStorageBroker /*: IStorageBroker*/
 {
     public void CreateFolder(string folderPath)
     {
@@ -44,7 +44,12 @@ public class AzureStorageBroker : IStorageBroker
         throw new NotImplementedException();
     }
 
-    public Task UploadFileAsync(string filePath, Stream stream)
+    public Task UploadFileAsync(string filePath, List<Stream> streams)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UploadFilesAsync(Dictionary<string, Stream> fileStreams)
     {
         throw new NotImplementedException();
     }

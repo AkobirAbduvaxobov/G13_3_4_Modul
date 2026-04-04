@@ -1,0 +1,19 @@
+Bekzod : 12/50
+
+1. Ref vs out : 0 
+
+2. string vs StringBuilder : 3
+
+3. recursiya : 0
+
+4. Abstract class vs Interface : 3
+
+5. Massive Add() => 6
+
+
+
+
+
+
+
+

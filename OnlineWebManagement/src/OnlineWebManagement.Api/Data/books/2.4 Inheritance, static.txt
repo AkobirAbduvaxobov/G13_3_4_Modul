@@ -1,0 +1,87 @@
+Rasulbek : 21/100 => 50 : 10.5, 50 : 40
+
+1. List vs Array : 2
+
+2. ctor => 10 
+
+3. => 8
+string s = "salom";
+StringBuilder sb1 = new StringBuilder(s);
+StringBuilder sb2 = sb1;
+
+4. Casting types => implicit casting, explicit casting : 0
+
+5. value type vs ref type : 1
+
+6. Akmal OOP => Paradigma => 
+
+
+
+
+* static bu classga tegishli key word, Objectga emas.
+
+* static ni biz class, prop, method, ctor, collection va boshqa narsalar bn ishlatsak bo'ladi
+
+* static prop va methodlarni faqat Class bilan ishlatamiz.
+* non static prop va methodlarni faqat Object bilan ishlatamiz.
+
+* static ni class bn ishlatsak ichidagi hamma narsa (istisno : const) static bo'ishi kk. Va bu class object olib bo'lmaydi.
+
+* static ctor faqat 1 ta bo'ladi. Classga murojat bo'lgan faqat 1 marta 1 chi bo'lib ishga tushadi.
+
+Quyidagi 2 ta qoida faqat 1 ta fileni Ichida bo'lsa ishlaydi
+
+* non-static lar => non-static vs static larni ishlata oladi.
+
+* static lar => faqat static larni ishlata oladi
+
+
+
+----------------------------
+
+1. Inheritance => Meros olish
+2. Abstraction
+3. Polymorphism
+4. Encapsulation
+
+
+------------- Inheritance ----------------
+
+* Inheritance 3 xil turi mavjud : Single , Multilevel , Hierarchical
+
+
+* 1 ta class faqat 1 ta classdan voris oladi. 
+
+* child class ota classni ctor ni ishlatishi kerak agar ota class dan custom ctor bo'lsa
+
+* farzand class yaralishidan oldin agar ota class bo'lsa u yaralishi shart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 
 namespace OnlineWebManagement.Broker.Services;
 
-public class DropboxStorageBroker : IStorageBroker
+public class DropboxStorageBroker /*: IStorageBroker*/
 {
     public void CreateFolder(string folderPath)
     {
@@ -44,7 +44,17 @@ public class DropboxStorageBroker : IStorageBroker
         throw new NotImplementedException();
     }
 
+    public Task UploadFileAsync(string filePath, List<Stream> streams)
+    {
+        throw new NotImplementedException();
+    }
+
     public Task UploadFileAsync(string filePath, Stream stream)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UploadFilesAsync(Dictionary<string, Stream> fileStreams)
     {
         throw new NotImplementedException();
     }

@@ -1,0 +1,9 @@
+
+
+DTO => Data transfer object
+
+User => Id, UserName, Password, Email, PhoneNumber, Salary
+
+
+Client => (dto) =>  IUserService() => (entity) => IUserRepository
+

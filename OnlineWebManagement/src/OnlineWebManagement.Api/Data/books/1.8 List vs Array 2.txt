@@ -1,0 +1,15 @@
+Muhammadjon
+
+1. string vs StringBuilder
+
+string s = "hello";
+s = "salom";
+
+2. Ref vs Value type
+
+List<int> l = new List<int>();
+l.Add(4);
+
+string xotiradan necha joy oladi?
+
+

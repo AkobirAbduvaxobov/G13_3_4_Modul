@@ -2,7 +2,7 @@
 
 namespace OnlineWebManagement.Broker.Services;
 
-public class AwsStorageBroker : IStorageBroker
+public class AwsStorageBroker /*: IStorageBroker*/
 {
     public void CreateFolder(string folderPath)
     {
@@ -45,6 +45,16 @@ public class AwsStorageBroker : IStorageBroker
     }
 
     public Task UploadFileAsync(string filePath, Stream stream)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UploadFileAsync(string filePath, List<Stream> streams)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task UploadFilesAsync(Dictionary<string, Stream> fileStreams)
     {
         throw new NotImplementedException();
     }

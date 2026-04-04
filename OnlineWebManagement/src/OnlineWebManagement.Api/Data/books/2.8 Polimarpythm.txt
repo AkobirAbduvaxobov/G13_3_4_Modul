@@ -1,0 +1,18 @@
+Madina : 5 / 50
+
+1. ref type vs value type : 3
+
+2. Array vs List : 2
+
+3. OOP : 0
+
+4. static : 0
+
+5. Abstraction nma, qanaqa qilib erishamiz, foydalari nma : 0
+
+
+
+
+
+
+

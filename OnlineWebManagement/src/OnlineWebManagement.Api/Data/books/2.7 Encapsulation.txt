@@ -1,0 +1,10 @@
+Access Modifier
+
+public => xoxlagan joyimiz
+private => faqat o'zi yaralgan class ichida
+protected => o'zi yaralgan class Ichida hamda farzand class ichida
+internal => 
+
+
+
+
